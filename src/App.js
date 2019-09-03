@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import {Todo} from './Todo'
 import {TodoList} from './TodoList'
+import {TodoApp} from './TodoApp';
 
 function App() {
   const todos = [{text:"Learn React", priority:5, dueDate: new Date() },
@@ -11,17 +12,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <TodoList todoList={todos}/>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+        <h1>
+          Todo-List
+        </h1>
+        <TodoApp />
       </header>
     </div>
   );
